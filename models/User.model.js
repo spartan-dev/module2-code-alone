@@ -5,7 +5,7 @@ const userSchema = new Schema(
   {
     username: {
       type: String,
-      required: false,
+      required: true,
       unique: true,
       trim: true,
     },
@@ -20,6 +20,16 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    avatar:{
+      type:String,
+      default:"https://res.cloudinary.com/dhgfid3ej/image/upload/v1670900519/bdaiedehxcqosfatnq1p.jpg"
+    },
+    about:{
+      type:String
+    },
+    fullName:{
+      type:String
+    }
   },
   {
     // this second object adds extra properties: `createdAt` and `updatedAt`
