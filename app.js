@@ -23,6 +23,8 @@ const projectName = "module2-code-alone";
 
 app.locals.appTitle = `${capitalize(projectName)} created with IronLauncher`;
 
+hbs.registerPartials(__dirname + "/views/partial");
+
 // 👇 Start handling routes here
 const indexRoutes = require("./routes/index.routes");
 app.use("/", indexRoutes);
