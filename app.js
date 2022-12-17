@@ -37,6 +37,9 @@ app.use("/news", newsRoutes);
 
 const userRoutes = require("./routes/user.routes");
 app.use("/user", userRoutes);
+
+const newsPost = require("./routes/post.routes");
+app.use("/post", newsPost);
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 

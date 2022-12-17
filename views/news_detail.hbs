@@ -1,0 +1,47 @@
+<section>
+  <h3>{{news_Blog.content}}</h3>
+  <!--en este mostramos el apartado de escribir el post o comment -->
+  <section>
+    <h3>Comments</h3>
+    <div class="row">
+      <form
+        action="/post/create/{{news_Blog._id}}"
+        method="POST"
+        class="col s12"
+      >
+        <div class="row">
+          <div class="input-field col s6">
+            <input
+              placeholder="please leave your comment"
+              id="first_name"
+              type="text"
+              class="validate"
+              name="post"
+            />
+            <label for="comment">Comment</label>
+          </div>
+        </div>
+        <button
+          class="btn waves-effect waves-light"
+          type="submit"
+          name="action"
+        >Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
+  </section>
+  <!-- mostramos el apartado para ver la lista de comments -->
+  <section>
+    <!-- traer la lista que ya existamn de post  y listarla-->
+    <ul>
+      {{#each allPost}}
+        <li>
+          {{this.comment}}
+        </li>
+      {{/each}}
+    </ul>
+
+  </section>
+</section>

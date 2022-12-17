@@ -13,5 +13,14 @@
    </div>
   </div>
   </section>
- 
-</>
+  <section>
+    <h3>My bLogs</h3>
+    <ul>
+    {{#each our_News}}
+      <li>
+          {{>CardNews this}}
+      </li>
+    {{/each}}
+    </ul>
+  </section>
+</ul>
