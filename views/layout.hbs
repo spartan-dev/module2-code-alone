@@ -23,12 +23,16 @@
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       {{>Navbar}}
-         {{{body}}}
+      <main class="mdl-layout__content">
+        {{{body}}}
+      </main>
+        
     </div>    
     <!-- Compiled and minified JavaScript -->
      <script
       src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
     ></script>
+    <script src="/js/material.min.js"></script>
     <script src="/js/script.js"></script>
   </body>
 
