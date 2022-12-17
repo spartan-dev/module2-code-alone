@@ -268,3 +268,15 @@ body {
   width: 200px;
   height: 200px;
 }
+
+.carouselCS {
+  display: flex;
+  flex-wrap: wrap;
+}
+.carouselCS>* {
+  flex: 1 1 160px;
+}
+.imagesCS{
+  width: 100%;
+  height: auto;
+}
