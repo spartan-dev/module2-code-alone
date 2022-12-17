@@ -1,0 +1,33 @@
+<header
+  class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary"
+>
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+  </div>
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+    <a href="/"><h3>News (Dylan &amp; Kain)</h3></a>
+  </div>
+  <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+  </div>
+  <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+    {{#if user}}
+    <a href="/user/profile" class="mdl-layout__tab is-active">Profile</a>
+    <a href="/auth/logout" class="mdl-layout__tab">logout</a>
+    <a
+      class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent waves-effect waves-light btn modal-trigger"
+      id="add"
+      data-target="modal1"
+      href="/news/addNews"
+    >
+      <i class="material-icons" role="presentation">add</i>
+      <span class="visuallyhidden">Add</span>
+    </a>
+    {{else}}
+    <a href="/auth/login" class="mdl-layout__tab">Signin</a>
+    <a href="/auth/signup" class="mdl-layout__tab">Signup</a>
+    {{/if}}
+    
+  </div>
+</header>
+
+
+  <!-- Modal Structure -->

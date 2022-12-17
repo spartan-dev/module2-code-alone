@@ -1,0 +1,26 @@
+<section class="container">
+  <h3>Welcome to your profile page</h3>
+  <section class="user-section">
+ <div class="avatar-container">
+     <img src="{{user.avatar}}" alt="Avatar" class="avatar"> 
+  </div>
+  <div class="info-container">
+   <div>
+    <p>Username: {{user.username}}</p>
+   </div>
+   <div>
+    <p>Email: {{user.email}}</p>
+   </div>
+  </div>
+  </section>
+  <section>
+    <h3>My bLogs</h3>
+    <ul>
+    {{#each our_News}}
+      <li>
+          {{>CardNews this}}
+      </li>
+    {{/each}}
+    </ul>
+  </section>
+</ul>

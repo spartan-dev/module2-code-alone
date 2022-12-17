@@ -1,0 +1,39 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{appTitle}}</title>
+   
+    {{!-- fonts --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+     <link rel="stylesheet" href="/stylesheets/material.min.css">
+     <link rel="stylesheet" href="/stylesheets/style.css" />
+   
+  </head>
+
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      {{>Navbar}}
+      <main class="mdl-layout__content">
+        {{{body}}}
+      </main>
+        
+    </div>    
+    <!-- Compiled and minified JavaScript -->
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+    ></script>
+    <script src="/js/material.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+
+</html>
