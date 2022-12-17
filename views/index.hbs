@@ -1,8 +1,5 @@
 <h1>{{appTitle}} 🚀</h1>
-<p>Welcome Ironhacker!</p>
-<a class="waves-effect waves-light btn"><i
-    class="material-icons right"
-  >cloud</i>button</a>
-<a class="waves-effect waves-light btn"><i
-    class="material-icons right"
-  >haymadre</i>amodarle</a>
+
+ {{#each news }}
+  {{>CardNews this}}
+ {{/each}}
