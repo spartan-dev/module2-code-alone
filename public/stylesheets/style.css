@@ -1,6 +1,6 @@
-
-html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+html,
+body {
+  font-family: "Roboto", "Helvetica", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -51,8 +51,8 @@ html, body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .mdl-demo .mdl-card > * {
   height: auto;
@@ -61,8 +61,8 @@ html, body {
   margin: 40px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   padding: 0;
   color: inherit;
   width: calc(100% - 80px);
@@ -77,7 +77,7 @@ html, body {
   color: inherit;
 }
 .mdl-demo .mdl-card__actions a {
-  color: #00BCD4;
+  color: #00bcd4;
   margin: 0;
 }
 .mdl-demo .mdl-card__actions a:hover,
@@ -105,19 +105,19 @@ html, body {
 .mdl-demo #features section.section--center {
   max-width: 620px;
 }
-.mdl-demo section > header{
+.mdl-demo section > header {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .mdl-demo section > .section__play-btn {
   min-height: 200px;
@@ -138,28 +138,28 @@ html, body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-flex: 0;
   -webkit-flex-grow: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -webkit-flex-shrink: 1;
-      -ms-flex-negative: 1;
-          flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 .mdl-demo section .section__text {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-flex-shrink: 0;
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
   padding-top: 8px;
 }
 .mdl-demo section .section__text h5 {
@@ -170,7 +170,10 @@ html, body {
 .mdl-demo section .section__text a {
   text-decoration: none;
 }
-.mdl-demo section .section__circle-container > .section__circle-container__circle {
+.mdl-demo
+  section
+  .section__circle-container
+  > .section__circle-container__circle {
   width: 64px;
   height: 64px;
   border-radius: 32px;
@@ -193,7 +196,7 @@ html, body {
   margin: 0 -8px -8px -8px;
 }
 .mdl-demo section.section--center .section__text:not(:last-child) {
-  border-bottom: 1px solid rgba(0,0,0,.13);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
 }
 .mdl-demo .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
@@ -204,11 +207,12 @@ html, body {
 .mdl-demo #features section {
   margin-bottom: 72px;
 }
-.mdl-demo #features h4, #features h5 {
+.mdl-demo #features h4,
+#features h5 {
   margin-bottom: 16px;
 }
 .mdl-demo .toc {
-  border-left: 4px solid #C1EEF4;
+  border-left: 4px solid #c1eef4;
   margin: 24px;
   padding: 0;
   padding-left: 8px;
@@ -219,15 +223,15 @@ html, body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .mdl-demo .toc h4 {
   font-size: 0.9rem;
   margin-top: 0;
 }
 .mdl-demo .toc a {
-  color: #4DD0E1;
+  color: #4dd0e1;
   text-decoration: none;
   font-size: 16px;
   line-height: 28px;
@@ -236,6 +240,31 @@ html, body {
 .mdl-demo .mdl-menu__container {
   z-index: 99;
 }
-.marginCustom{
+.marginCustom {
   margin-bottom: 10px !important;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+.user-section {
+  display: flex;
+  flex-direction: row;
+}
+.avatar-container {
+  width: 50%;
+}
+.info-container {
+  width: 50%;
+  padding: 15px;
+}
+.avatar {
+  vertical-align: middle;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
 }
