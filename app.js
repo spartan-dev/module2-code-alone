@@ -32,9 +32,11 @@ app.use("/", indexRoutes);
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
 
-const newsRoutes = require("./routes/news.routes")
-app.use("/news",newsRoutes)
+const newsRoutes = require("./routes/news.routes");
+app.use("/news", newsRoutes);
 
+const userRoutes = require("./routes/user.routes");
+app.use("/user", userRoutes);
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);
 
